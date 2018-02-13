@@ -1,0 +1,5 @@
+{
+    //disable default javascript validator replaced by eslint
+    "jshint.options": {"esversion": 6},
+    "javascript.validate.enable" : false 
+} 
