@@ -11,7 +11,7 @@ exports[`should render exp list 1`] = `
     </h3>
   </Link>
   <p>
-    $50.00
+    $2.00
     -
     1970 January 4th
   </p>
