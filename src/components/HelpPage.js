@@ -1,9 +1,28 @@
 import React from 'react';
+import Webcam from 'react-webcam';
 
-const HelpPage = () => (
-    <div>
-    This is my help page component
-    </div>
-);
+export default class HelpPage extends React.Component {
 
-export default HelpPage;
+    setRef = (webcam) => {
+      this.webcam = webcam;
+    }
+  
+    capture = () => {
+      const imageSrc = this.webcam.getScreenshot();
+    };
+  
+    render() {
+      return (
+        <div>
+          <Webcam
+            audio={false}
+            height={350}
+            ref={this.setRef}
+            screenshotFormat="image/jpeg"
+            width={350}
+          />
+          <button onClick={this.capture}>Capture photo</button>
+        </div>
+      );
+    }
+  }

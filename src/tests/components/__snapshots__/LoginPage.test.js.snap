@@ -1,11 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render loginpage corr 1`] = `
-<div>
-  <button
-    onClick={[MockFunction]}
+<div
+  class="box-layout"
+>
+  <div
+    class="box-layout__box"
   >
-    Login
-  </button>
+    <h1
+      className="box-layout__title"
+    >
+      Expensify
+    </h1>
+    <p>
+      Its' time
+    </p>
+    <button
+      className="button"
+      onClick={[MockFunction]}
+    >
+      Login with Google
+    </button>
+  </div>
 </div>
 `;
